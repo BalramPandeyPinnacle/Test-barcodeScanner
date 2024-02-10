@@ -9,7 +9,7 @@ const licenseKey = "AfHkHGFKRbwJD5nD9CuWn3I14pFUOfSbU1h6qLludGWOcCg39z8QFZdLqvUB
      async function runScanner() {
        await SDCCore.configure({
        licenseKey: licenseKey,
-       libraryLocation: process.env.PUBLIC_URL + '/engine',
+       libraryLocation: 'https://ebook.ssccglpinnacle.com/engine',
        moduleLoaders: [SDCBarcode.barcodeCaptureLoader()]
      });
 
