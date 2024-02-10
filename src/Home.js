@@ -7,6 +7,8 @@ export default function Home() {
         <Link to="/a"> test 1&nbsp;&nbsp;&nbsp;&nbsp;</Link>
         <Link to="/b"> test 2&nbsp;&nbsp;&nbsp;&nbsp;</Link>
         <Link to="/c"> test 3 &nbsp;&nbsp;&nbsp;&nbsp;</Link>
+        <Link to="/d"> Scanner &nbsp;&nbsp;&nbsp;&nbsp;</Link>
+        
   
 
     </div>
