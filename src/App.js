@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import BarcodeScanner from "./BarCodeScanner";
+import BScanner from "./BScanner";
+import BarcodeScannerA from "./BarCodeScannerA";
+import Home from "./Home";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={< Home />} />
+    <Route path="/a" element={< BarcodeScanner />} />
+    <Route path="/b" element={< BScanner/>} />
+    <Route path="/c" element={< BarcodeScannerA/>} />
+    </Routes>
+    </BrowserRouter>
+    
   );
 }
 
